@@ -1,0 +1,32 @@
+
+<header style="margin-bottom: 0px;  font-family: 'NanumSquare'; text-rendering:optimizeLegibility;  -webkit-font-smoothing: antialiased;" class="mb-auto">
+<div>
+    <nav class="nav nav-masthead justify-content-center float-md-start">
+        <a href="{% url 'index' %}" class="btn fw-bold span-title m-2 logoimg1"></a>
+        <a href="{% url 'index' %}" class="btn fw-bold span-title m-2 ms-0 p-1 logoimg2"></a>
+
+        <a class="btn fw-bold span-title m-2" href="{% url 'index' %}">Home</a>
+        <a class="btn fw-bold span-title m-2" href="{% url 'index' %}">Products</a>
+        <a class="btn fw-bold span-title m-2" href="{% url 'index' %}">Resources</a>
+        
+            
+    </nav>
+    <nav class="nav nav-masthead justify-content-end flex-end">
+        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" style= "width:60%;padding-top:2px; margin-top: 4px;  opacity:0.5;">
+            <input style= "height:39px; " type="search" class="form-control height:30px;  form-control-dark" placeholder="지역을 검색해주세요." aria-label="Search">
+        </form>  -->
+        <a class="btn fw-bold span-title m-2" href="{% url 'index' %}">Contact</a>
+    </nav>
+</div>
+</header>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+$('#transit').mousemove(function(e){
+    var rXP = (e.pageX - this.offsetLeft+$(this).width()/2);
+    var rYP = (e.pageY - this.offsetTop+$(this).height()/2);
+    $('#transit').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+    });
+});
+</script>

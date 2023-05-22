@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "meta.html" %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body class=" h-100 text-center text-black">
+            <div class="d-flex w-100 h-100 p-3 mx-auto flex-column fixed-top" >
+                {% include "topbar.html" %}
+                <img class="islandimg" src="../static/img/island.jpeg">
+
+                <div class="imgdiv">
+                    <div class="imginsidediv">
+                        <img class="isl isl_1" src="../static/img/섬1_한경면.svg" onclick="onDisplay1()">
+                        <img class="isl isl_2" src="../static/img/섬2_한림읍.svg">
+                        <img class="isl isl_3" src="../static/img/섬3_애월읍.svg">
+                        <img class="isl isl_4" src="../static/img/섬4_제주시.svg">
+                        <img class="isl isl_5" src="../static/img/섬5_조천읍.svg">
+                        <img class="isl isl_6" src="../static/img/섬6_구좌읍.svg">
+                        <img class="isl isl_7" src="../static/img/섬7_대정읍.svg">
+                        <img class="isl isl_8" src="../static/img/섬8_안덕면.svg">
+                        <img class="isl isl_9" src="../static/img/섬9_서귀포시.svg">
+                        <img class="isl isl_10" src="../static/img/섬10_남원읍.svg">
+                        <img class="isl isl_11" src="../static/img/섬11_표선면.svg">
+                        <img class="isl isl_12" src="../static/img/섬12_성신읍.svg">
+
+                        <div class="col-md-5 isl_div" id="isl_div1" style="display: none;">
+                            <a class="btn fw-bold m-3 tourbtn" href="{% url 'webcam' %}">사려니숲길</a>
+                            <a class="btn fw-bold m-3 tourbtn" href="{% url 'index' %}">한림공원</a>
+                            <a class="btn fw-bold m-3 tourbtn" href="{% url 'index' %}">오설록</a>
+                            <a class="btn fw-bold m-3 tourbtn" href="{% url 'index' %}">산방산</a>
+                            <a class="btn fw-bold m-3 tourbtn" href="{% url 'index' %}">금오름</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+            <h1 class="description">여행자 사진 구도 추천 서비스</h1>
+
+        
+        </body>
+            <!-- 페이지 이동 js -->
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        function onDisplay1() { $('#isl_div1').show();}
+    // jQuery(document).ready(function(){
+    // $('h1').mousemove(function(e){
+    //     var rXP = (e.pageX - this.offsetLeft+$(this).width()/2);
+    //     var rYP = (e.pageY - this.offsetTop+$(this).height()/2);
+    //     $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+    //     });
+    // });
+</script>
+</html>

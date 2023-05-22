@@ -1,0 +1,200 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>PIKS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+
+        <style>
+            h1 { 
+                text-align: center; 
+                margin-bottom: 20px;
+                }
+            body{
+            font-weight: 400;
+            font-size: 15px;
+            font-family: 'NanumSquare';
+            line-height: 3.2em; 
+            text-rendering:optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            color: #3c3c3c;
+            margin: 0px;
+            padding: 0px;
+            background-color: #212529!important;
+        }
+        /* for topbar */
+        .not-visible {
+            visibility: hidden;
+        }
+        span{
+            color: orange;
+        }
+        /* for topbar finished */
+        #container {
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        #header {
+            padding: 20px;
+            margin-bottom: 20px;
+            /* border: 1px solid #bcbcbc; */
+        }
+        #content {
+            width: 80%;
+            padding: 10px;
+            float: left;
+            /* border: 1px solid #bcbcbc; */
+        }
+        #sidebar {
+            width: 100%;
+            margin-bottom: 10px;
+            float: right;
+            text-align:center;
+            /* border: 1px solid #bcbcbc; */
+        }
+        #content-header {
+            display: flex; 
+            flex-direction: row;
+            width: 100%;
+            height: 60px;
+        }
+
+        /* #footer {
+            clear: both;
+            padding: 20px;
+            border: 1px solid #bcbcbc;
+        } */
+        .date{
+            text-align: right;
+        }
+        .about{
+            height: 20px;
+            width: 90%;
+            display: flex; 
+            flex-direction: row;
+            padding: 10px;
+            line-height: 100%;
+            font-size: 30px;
+            margin-left: 70px;
+        }
+        .about p{
+            vertical-align:bottom;
+            padding: 10px;
+        }
+        .like{
+            display: inline-flex; 
+            flex-direction: row;
+            text-align: right;
+            font-size: 20px;
+            width: 20%;
+            margin-right: 30px;
+        }
+        .likehidden{
+            visibility: hidden;
+            display: inline-flex; 
+            flex-direction: row;
+            text-align: right;
+            font-size: 20px;
+            width: 20%;
+            
+        }
+        .like p{
+            vertical-align: middle;
+            padding: 10px;
+        }
+        @media ( max-width: 780px ) {
+            #container {
+            width: auto;
+            }
+            #content {
+            float: none;
+            width: auto;
+            }
+            #sidebar {
+            float: none;
+            width: auto;
+            font-family: 'NanumSquare';
+            }
+		
+        }
+        </style>
+    <body class="d-flex h-100 text-white line-height: 3.2em;">  
+        <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
+                {% include "topbar.html" %}
+    <div id="container">
+        <div id="content" style="height:730px;">
+            <h1> Y드립 시네마 '침세계' </h1>
+                <video poster="{% static 'img/play.jpg' %}" style="margin-left: 70px; border: 5px solid rgb(51, 52, 59);" width='1150px' hegiht='300px' src="{% static 'img/MainVideo.mp4'%}" controls></video>
+                <!-- <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="90%" src="{% static 'img/MainVideo.mp4'%}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div id="content" style="height:10px;">  
+            <div id="content-header">
+                <div class = "about">
+                    <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
+                    <p> #재미있는 </p></a>
+                    <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
+                    <p> #신박한 </p></a>
+                    <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
+                    <p> #공익광고 </p></a>
+                    <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
+                    <p> #국내 </p></a>
+                </div>
+                <div class = "like">
+                    <p style="color: red;"> ❤ </p>
+                    <p style="color: red;"> 18330 </p>
+                    <p style="color: goldenrod;"> ◈ </p>
+                    <p style="color: goldenrod;"> 200 </p>
+                    </div>
+                <div class = "description" style= 'margin-right: 100px;'>
+                    <button type="button" class="btn btn-warning me-2" style= "font-size: 14px; width:130px; margin-top: 15px; height: 30px; font-weight: bold; padding: 3px; font-family: 'Noto Sans KR', sans-serif;">더 알아보기</button>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <div id="sidebar" style="height: 35px;  ">
+                <p>추천 영상</p>
+            </div>
+            <div id="sidebar" style= 'border: 5px solid rgb(51, 52, 59);'>
+                <img src="{% static 'img/fun6.PNG' %}" alt="" class="img-fluid">
+            </div>
+            <div id="sidebar" style= 'border: 5px solid rgb(51, 52, 59);'>
+                <img src="{% static 'img/fun2.PNG' %}" alt="" class="img-fluid">
+            </div>
+            <div id="sidebar" style= 'border: 5px solid rgb(51, 52, 59);'>
+                <img src="{% static 'img/fun3.PNG' %}" alt="" class="img-fluid">
+            </div>
+            <div id="sidebar" style= 'border: 5px solid rgb(51, 52, 59);'>
+                <img src="{% static 'img/fun4.PNG' %}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- <div id="xfooter">
+            <p>Copyright</p>
+        </div> -->
+        </div>
+
+    </div>
+
+    
+        <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+        <div id="loader-wrapper">
+            
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+
+    </body>
+
+
+</html>

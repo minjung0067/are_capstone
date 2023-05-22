@@ -1,0 +1,258 @@
+
+.not-visible {
+    visibility: hidden;
+}
+.span-title{
+    width: 90px;
+    height:30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900!important;
+    font-size: 15px;
+    line-height: 22px;  
+    color: #272D37;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.span-title:focus{
+    border: none;
+    box-shadow: none;
+}
+/* .px-3 p{
+    text-transform: capitalize;
+    font-size: 33px;
+    white-space: nowrap;
+    color: #212529;
+    margin: 0;
+    position: absolute;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family:'Noto Sans KR', sans-serif !important;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.px-3 p::before{
+    content: "여기 Skip 할 수 없는 광고가 있습니다.  ";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: typing 5s steps(33) infinite;
+}
+@keyframes typing{
+    0% {
+        width: 20%;
+    }
+    95%{
+        width:100%;
+    }
+}
+.px-3 h1{
+    text-transform: capitalize;
+    white-space: nowrap;
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.transitions{
+    background: #212529;
+    position: relative;
+    animation: fade 4s forwards;
+    }
+    @keyframes fade {
+    0% {
+        opacity:0.3;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity:1;
+    }
+    }
+h1{
+    text-transform:uppercase;
+} */
+/* .px-3 h1::before{
+    content: " P I K S ";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 165, 0);
+    overflow: hidden;
+    animation: typing2 4s steps(30);
+}
+@keyframes typing2{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width:100%;
+    }
+} */
+#buttton:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border: none;
+}
+.btn:focus{
+    border: none;
+}
+body{
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'NanumSquare';
+    line-height: 3.2em;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+.logo-title{
+    color: black;
+}
+.logoimg1{
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../img/logo1.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+.logoimg2{
+    background-position: left;
+    height:25px;
+    background-image: url("../img/logo2.jpg");
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+.islandimg{
+    position: absolute;
+    width: 716.96px;
+    height: 320px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 520px;
+}
+.description{
+    position: absolute;
+    left: 112px;
+    top: 133px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 60px;
+
+    color: #272D37;
+}
+.imgdiv{
+    position: absolute;
+    width: 716.96px;
+    height: 224.8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 253px;
+}
+.imginsidediv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.isl_1{
+    position: absolute;
+    left: 0px;
+    top: 78.56px;
+}
+.isl_2{
+    position: absolute;
+    left: 111.38px;
+    top: 49.73px;
+}
+.isl_3{
+    position: absolute;
+    top: 30.73px;
+    left: 219.48px;
+}
+.isl_4{
+    position: absolute;
+    top: 14.36px;
+    left: 326.93px;
+}
+.isl_5{
+    position: absolute;
+    top: 3.87px;
+    left: 418.66px;
+}
+.isl_6{
+    position: absolute;
+    top: 0px;
+    left: 508.12px;
+}
+.isl_7{
+    position: absolute;
+    top: 143px;
+    left: 41.34px;
+}
+.isl_8{
+    position: absolute;
+    top: 133.6px;
+    left: 137.59px;
+}
+.isl_9{
+    position: absolute;
+    top: 120px;
+    left: 241.34px;
+}
+.isl_10{
+    position: absolute;
+    top: 90px;
+    left: 367.34px;
+}
+.isl_11{
+    position: absolute;
+    top: 68px;
+    left: 463.34px;
+}
+.isl_12{
+    position:absolute;
+    top: 50px;
+    left: 553.34px;
+}
+.isl:hover {
+    cursor: pointer;
+    filter: opacity(1) drop-shadow(0 0 0 #51ff00);;
+    transition: 0.4s;
+}
+.isl_div{
+    position:absolute;
+    top: 130px;
+    left: 863.34px;
+    width: 170px;
+    height: 1233px;
+}
+.tourbtn{
+    width: 137px;
+    color: white;
+    background: #AFB0B1;
+    border-radius: 24px;
+}
+.tourbtn:hover{
+    cursor: pointer;
+    filter: opacity(1) drop-shadow(0 0 0 #2fff00);;
+    transition: 0.1s;
+}
