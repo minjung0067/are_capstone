@@ -22,7 +22,7 @@ def webcam(request):
         # 이미지 저장    
         cv2.imwrite('./save/original.jpg', bg_img)
         cv2.imwrite('./save/captured.jpg', frame)
-        exit_program()
+        # exit_program()
         
     def exit_program():
         # 프로그램 종료
